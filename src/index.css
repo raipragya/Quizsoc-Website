@@ -1,0 +1,142 @@
+:root{
+  background-color: rgba(154, 24, 206, 0.938);
+}
+
+.navbar {
+  background-color: #b815e977;
+  padding:0.8rem;
+  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  height: auto; /* Maintains the aspect ratio */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s; /* Add smooth transition for 'top' property */
+}
+.navbar:hover {
+  top: 0; /* Ensure navbar remains visible on hover */
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for link color change */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #17141a;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between them */
+  align-items: center; /* Centers items vertically */
+  /* You can also add padding, margin, or other styles as needed */
+}
+
+.herotext {
+  flex: 1; /* Takes up remaining space in the flex container */
+  padding: 50px;
+  height:50%; /* Adjust padding as needed */
+  width:50%;
+  align-items: center;
+}
+.herotext h2{
+  font-family: "Roboto Slab", serif;
+  
+}
+
+
+.imageback {
+  flex: 1; /* Takes up remaining space in the flex container */
+  text-align: right; /* Aligns content (including images) to the right */
+  /* You can also add padding, margin, or other styles as needed */
+}
+
+.image {
+  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  height:100%; /* Maintains the aspect ratio */
+  width:100%;
+  
+  /* Additional styles as per your design requirements */
+}
+
+
+
+.footer {
+  display: flex;
+  background-color: #473e3ef8;
+  color: rgba(207, 202, 209, 0.842);
+  
+}
+
+
+.footer .text{
+  align-items: center;
+}
+.logo {
+ 
+  margin-left: auto;
+}
+.navtop {
+  display: grid;
+  grid-template-columns: 1fr auto; /* 1fr for h1, auto for button */
+  align-items: center;
+  padding: 10px;
+}
+.leaveroombutton {
+  background-color: #e74c3c; /* Red background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  justify-self: end;
+}
+.leaveroombutton:hover {
+  background-color: #e6141498; /* Darker red on hover */
+}
+.quizroombg {
+  position: relative; /* Position relative to its container */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buzzer-button {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: #880c08; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 15px 30px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 90%; /* Makes it round */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.buzzer-button:hover {
+  background-color: #d12418; /* Darker blue on hover */
+}
